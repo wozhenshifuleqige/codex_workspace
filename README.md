@@ -88,7 +88,7 @@ AI 弹幕基于剧情简介生成，不是逐帧理解视频。推荐流程：
 AI 功能需要启动本地服务：
 
 ```powershell
-cd D:\codex_workspace\quark-danmaku-extension\local-ai-server
+cd D:path\to\quark-danmaku-extension\local-ai-server
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
