@@ -1,0 +1,20 @@
+[
+  {
+    "time": 1,
+    "text": "示例弹幕：叠加层正常",
+    "mode": "scroll",
+    "color": "#ffffff"
+  },
+  {
+    "time": 3,
+    "text": "可以在插件面板里调时间偏移",
+    "mode": "scroll",
+    "color": "#93c5fd"
+  },
+  {
+    "time": 5,
+    "text": "支持 B 站 XML、ASS、JSON",
+    "mode": "scroll",
+    "color": "#fbbf24"
+  }
+]

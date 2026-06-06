@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Cloud Drive Danmaku Overlay",
+  "version": "0.1.0",
+  "description": "Adds a local danmaku overlay to cloud drive video playback.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://*.quark.cn/*",
+    "https://pan.baidu.com/*",
+    "https://yun.baidu.com/*",
+    "https://api.bilibili.com/*",
+    "https://www.bilibili.com/*",
+    "http://127.0.0.1:8765/*",
+    "http://localhost:8765/*",
+    "https://ark.cn-beijing.volces.com/*",
+    "https://api.deepseek.com/*",
+    "https://dashscope.aliyuncs.com/*",
+    "https://api.openai.com/*",
+    "https://api.bgm.tv/*",
+    "https://baike.baidu.com/*",
+    "https://zh.moegirl.org.cn/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.quark.cn/*",
+        "https://pan.baidu.com/*",
+        "https://yun.baidu.com/*"
+      ],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Quark Danmaku Overlay"
+  }
+}
